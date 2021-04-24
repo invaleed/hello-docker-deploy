@@ -7,6 +7,6 @@ patchesStrategicMerge:
 
 images:
 - name: invaleed/hello-docker
-  newTag: 7ee2366bc4cb34f2a9b2ea8740dcda87db49504a
+  newTag: 36462c5b5a26bfcf92be4345dc129311c0097889
 resources:
 - ../base
