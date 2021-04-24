@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-docker
+spec:
+  template:
+    spec:
+      containers:
+      - name: hello-docker
+        env:
+        - name: ENVIRONMENT
+          value: dev

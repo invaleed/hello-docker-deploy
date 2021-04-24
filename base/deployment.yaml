@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-docker
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  progressDeadlineSeconds: 30
+  selector:
+    matchLabels:
+      app: hello-docker
+  template:
+    metadata:
+      labels:
+        app: hello-docker
+    spec:
+      containers:
+      - image: invaleed/hello-docker:c1b8fca64cbd463d244fe1cfb4dae649cdef0347
+        name: hello-docker
+        ports:
+        - containerPort: 80
